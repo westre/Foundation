@@ -1,4 +1,4 @@
-description 'stuff'
+description 'Foundation:: Whitelist script'
 
 ui_page 'html/whitelist.html'
 
