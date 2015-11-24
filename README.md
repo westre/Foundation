@@ -1,8 +1,11 @@
-##Project Foundation
+#Project Foundation
 
-Welcome to the project page of Foundation, a FiveM server script. It's currently a simple script consisting of one feature: whitelisting.
+Welcome to the project page of Foundation, a FiveM server script. It's currently a simple script consisting of one feature: whitelisting. More features will be added in the near future however, as the goal is to create an administrative system.
+
+
+##Whitelisting
 There is no configuration file available, so you will need to modify different files to let it cater to your needs. 
-Also given the current limitations of the scripting engine, non-whitelisted players will **not** be kicked, but their controls will be disabled and a your message of choice will be shown.
+Also given the current limitations of the scripting engine, non-whitelisted players will/can **not** be kicked, but their controls will be disabled and a your message of choice will be shown.
 
 ####[Screenshot of the script](http://i.imgur.com/7WqHhFQ.png)
 
