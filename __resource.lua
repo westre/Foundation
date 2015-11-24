@@ -8,5 +8,5 @@ server_script 'server_whitelist.lua'
 files {
     'html/whitelist.html',
     'html/whitelist.css',
-	'html/whitelist.js',
+    'html/whitelist.js',
 }
