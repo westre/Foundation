@@ -1,0 +1,23 @@
+body {
+    background-color: transparent;
+    margin: 0px;
+}
+
+#whitelistScreen {
+    width: 100%;
+	height: 100%;
+    color: #fff;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+#whitelistText {
+	width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 300px;
+	font-size: 34px;
+    font-family: Arial;
+	color: white;
+	text-align: center;
+}
