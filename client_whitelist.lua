@@ -12,13 +12,12 @@ AddEventHandler('foundation:playerWhitelisted', function(whitelisted)
 		SendNUIMessage({
 			command = 'blockPlayer'
 		})
-		sendMessage('Not whitelisted.')
 	else
 		sendMessage('You are whitelisted, welcome!')
 	end
 end)
 
-function sendMessage(message) -- requires 'chat' resource
+function sendMessage(message)
 	TriggerEvent('chatMessage', '', { 0, 0, 0 }, message)
 end
 

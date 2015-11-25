@@ -22,11 +22,5 @@ AddEventHandler('foundation:onPlayerConnect', function()
 		end
 	end
 	
-	if not isWhitelisted then
-		TriggerClientEvent('foundation:playerWhitelisted', source, false) -- -1 is all?
-		print("Is non whitelisted player")
-	else
-		TriggerClientEvent('foundation:playerWhitelisted', source, true)
-		print("Whitelisted player!")
-	end
+	TriggerClientEvent('foundation:playerWhitelisted', source, isWhitelisted)
 end)
