@@ -1,7 +1,7 @@
 local isWhitelisted = false;
 
 AddEventHandler('onPlayerJoining', function(playerId, name)
-	TriggerServerEvent('foundation:onPlayerConnect', playerId)
+	TriggerServerEvent('foundation:onPlayerConnect')
 end)
 
 RegisterNetEvent('foundation:playerWhitelisted')

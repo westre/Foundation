@@ -8,11 +8,11 @@ local configuration = {
 }
 
 RegisterServerEvent('foundation:onPlayerConnect')
-AddEventHandler('foundation:onPlayerConnect', function(playerId)
+AddEventHandler('foundation:onPlayerConnect', function()
     local isWhitelisted = false
-	local name = GetPlayerName(playerId)
+	local name = GetPlayerName(source)
 	
-	print('Player ' .. name .. ' connecting with playerId ' .. playerId)
+	print('Player ' .. name .. ' connecting with playerId ' .. source)
 	
 	for key, value in ipairs(configuration["whitelisted_names"]) do
 		if configuration["whitelisted_names"][key] == name then
@@ -23,10 +23,10 @@ AddEventHandler('foundation:onPlayerConnect', function(playerId)
 	end
 	
 	if not isWhitelisted then
-		TriggerClientEvent('foundation:playerWhitelisted', playerId, false) -- -1 is all?
+		TriggerClientEvent('foundation:playerWhitelisted', source, false) -- -1 is all?
 		print("Is non whitelisted player")
 	else
-		TriggerClientEvent('foundation:playerWhitelisted', playerId, true)
+		TriggerClientEvent('foundation:playerWhitelisted', source, true)
 		print("Whitelisted player!")
 	end
 end)
