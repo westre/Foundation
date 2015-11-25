@@ -20,6 +20,7 @@ Given the current limitations of the scripting engine, non-whitelisted players c
 **Adding players to the whitelist**
 - Open whitelist.txt
 - Add the desired username per line
+- You can also do this while the server is running, make sure you type in !refreshwhitelist afterwards
 
 **Changing the message non-whitelisted players see**
 - Open html/whitelist.js
