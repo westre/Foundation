@@ -4,8 +4,7 @@ Welcome to the project page of Foundation, a FiveM server script. It's currently
 
 
 ##Whitelisting
-There is no configuration file available, so you will need to modify different files to let it cater to your needs. 
-Also given the current limitations of the scripting engine, non-whitelisted players will/can **not** be kicked, but their controls will be disabled and a your message of choice will be shown.
+Given the current limitations of the scripting engine, non-whitelisted players can/will **not** be kicked, but their controls will be disabled and a your message of choice will be shown.
 
 ####[Screenshot of the script](http://i.imgur.com/7WqHhFQ.png)
 
@@ -19,8 +18,8 @@ Also given the current limitations of the scripting engine, non-whitelisted play
 ###Configuration
 
 **Adding players to the whitelist**
-- Open server_whitelist.lua
-- Change user1, user2, user3 and so forth to the desired playernames
+- Open whitelist.txt
+- Add the desired username per line
 
 **Changing the message non-whitelisted players see**
 - Open html/whitelist.js
